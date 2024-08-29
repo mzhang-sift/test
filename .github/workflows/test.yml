@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run
-        run: docker run --rm -it hello-world:latest
+        run: docker run --rm hello-world:latest
