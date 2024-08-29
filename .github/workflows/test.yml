@@ -3,7 +3,6 @@ on: push
 defaults:
   run:
     shell: bash
-    working-directory: ./asdf
 
 jobs:
   a:
@@ -11,7 +10,7 @@ jobs:
     container:
       image: ubuntu:latest
       volumes:
-        - ./asdf:/test
+        - /__w/test/test/asdf:/test
 
     steps:
       - name: run
