@@ -1,0 +1,9 @@
+jobs:
+  a:
+    container:
+      volumes:
+        - ./asdf:/test
+
+    steps:
+      - name: run
+        run: pwd && ls -al && ls -al /test
