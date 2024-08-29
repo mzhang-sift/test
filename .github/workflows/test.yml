@@ -3,7 +3,7 @@ on: push
 defaults:
   run:
     shell: bash
-    working-directory: /code
+    working-directory: ./asdf
 
 jobs:
   a:
