@@ -7,11 +7,6 @@ defaults:
 jobs:
   a:
     runs-on: ubuntu-latest
-    container:
-      image: ubuntu:latest
-      volumes:
-        - /__w/test/test/asdf:/test
-
     steps:
       - name: run
-        run: pwd && ls -al && ls -al /test
+        run: docker run --rm -it hello-world:latest
