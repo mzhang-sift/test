@@ -2,6 +2,7 @@ on: push
 
 jobs:
   a:
+    runs-on: ubuntu-latest
     container:
       volumes:
         - ./asdf:/test
