@@ -4,6 +4,7 @@ jobs:
   a:
     runs-on: ubuntu-latest
     container:
+      image: ubuntu:latest
       volumes:
         - ./asdf:/test
 
